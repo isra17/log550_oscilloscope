@@ -1,6 +1,6 @@
 // Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.geocities.com/kpdus/jad.html
-// Decompiler options: packimports(3) 
+// Decompiler options: packimports(3)
 // Source File Name:   Sampler.java
 
 package ca.etsmtl.log550.oscilloscope.sampling;
@@ -108,7 +108,7 @@ public class Sampler
             int length = 0;
             try
             {
-                while((length = in.read(buffer)) > -1 && !readerThread.isInterrupted()) 
+                while((length = in.read(buffer)) > -1 && !readerThread.isInterrupted())
                     handleData(buffer, 0, length);
             }
             catch(IOException e)
@@ -260,7 +260,7 @@ public class Sampler
     {
         for(int i = offset; i < length; i++)
         {
-            int value = data[i];
+            int value = data[i] & 0xFF;
             int channel = value & 1;
             value &= -2;
             value <<= 2;
