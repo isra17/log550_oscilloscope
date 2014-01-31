@@ -1,6 +1,7 @@
 # log550 Oscilloscope utility
 
-Oscilloscope given for the log550 course with some fixes added
+Oscilloscope given for the log550 course with some fixes added.
+The provided jar was reverse engineered with the JAD utility.
 
 Source: https://cours.etsmtl.ca/log550/private/labo/OscilloTestJAVA.zip
 
